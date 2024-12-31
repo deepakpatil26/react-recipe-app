@@ -29,6 +29,9 @@
   <img src="screenshots/recipe-details.png" alt="Recipe Details" width="80%"/>
   <p><em>Detailed Recipe View with Ingredients and Instructions</em></p>
   
+  <img src="screenshots/RecipeSummary.png" alt="Recipe Summary" width="80%"/>
+  <p><em>Recipe Summary with Nutritional Information</em></p>
+  
   <img src="screenshots/mobile-view.png" alt="Mobile View" width="30%"/>
   <p><em>Responsive Mobile Design</em></p>
 </div>
