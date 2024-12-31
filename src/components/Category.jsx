@@ -1,68 +1,67 @@
+import React from "react";
 import { FaPizzaSlice, FaHamburger } from "react-icons/fa";
 import { GiNoodles, GiChopsticks } from "react-icons/gi";
-import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
+
+const categories = [
+  {
+    name: "Italian",
+    icon: <FaPizzaSlice />,
+    path: "cuisines/Italian",
+  },
+  {
+    name: "American",
+    icon: <FaHamburger />,
+    path: "cuisines/American",
+  },
+  {
+    name: "Thai",
+    icon: <GiNoodles />,
+    path: "cuisines/Thai",
+  },
+  {
+    name: "Japanese",
+    icon: <GiChopsticks />,
+    path: "cuisines/Japanese",
+  },
+];
 
 const Category = () => {
   return (
-    <List>
-      <SLink to={"/cuisines/Italian"}>
-        <FaPizzaSlice />
-        <h4>Italian</h4>
-      </SLink>
-      <SLink to={"/cuisines/American"}>
-        <FaHamburger />
-        <h4>American</h4>
-      </SLink>
-      <SLink to={"/cuisines/Thai"}>
-        <GiNoodles />
-        <h4>Thai</h4>
-      </SLink>
-      <SLink to={"/cuisines/Japanese"}>
-        <GiChopsticks />
-        <h4>Japanese</h4>
-      </SLink>
-    </List>
+    <motion.div
+      className="flex flex-wrap justify-center gap-4 my-8"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      {categories.map((category) => (
+        <NavLink
+          to={`/${category.path}`}
+          key={category.name}
+          className={({ isActive }) =>
+            `flex flex-col items-center justify-center w-20 h-20 sm:w-24 sm:h-24 
+            rounded-full cursor-pointer transform transition-all duration-200 
+            hover:scale-110 hover:-translate-y-1 
+            ${
+              isActive
+                ? "bg-gradient-to-r from-orange-500 to-orange-600 text-white"
+                : "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-600 hover:from-gray-200 hover:to-gray-300"
+            }`
+          }
+        >
+          <motion.div
+            whileHover={{ rotate: 180 }}
+            transition={{ duration: 0.3 }}
+            className="text-2xl sm:text-3xl mb-1"
+          >
+            {category.icon}
+          </motion.div>
+          <p className="text-xs sm:text-sm font-medium">{category.name}</p>
+        </NavLink>
+      ))}
+    </motion.div>
   );
 };
 
-const List = styled.div`
-  display: flex;
-  justify-content: center;
-  margin: 2rem 0;
-`;
-
-const SLink = styled(NavLink)`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin-right: 2rem;
-  text-decoration: none;
-  width: 6rem;
-  height: 6rem;
-  background: linear-gradient(35deg, #494949, #313131);
-  cursor: pointer;
-  transform: scale(0.8);
-
-  h4 {
-    color: #fff;
-    font-size: 0.8rem;
-  }
-  svg {
-    color: #fff;
-    font-size: 1.5rem;
-  }
-
-  &.active {
-    background: linear-gradient(to right, #f27121, #e94057);
-    svg {
-      color: #fff;
-    }
-    h4 {
-      color: #fff;
-    }
-  }
-`;
-export default Category;
+export default React.memo(Category);
