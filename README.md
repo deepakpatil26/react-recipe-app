@@ -49,17 +49,20 @@
 ## 🚀 Quick Start
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/deepakpatil26/react-recipe-app.git
    cd react-recipe-app
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Set up environment variables**
+
    - Create a `.env` file in the root directory
    - Add your Spoonacular API key:
      ```env
@@ -67,6 +70,7 @@
      ```
 
 4. **Start the development server**
+
    ```bash
    npm start
    ```
@@ -76,6 +80,7 @@
 ## 📱 Mobile Responsiveness
 
 The app is fully responsive and provides an optimal viewing experience across a wide range of devices:
+
 - 💻 Desktop
 - 💪 Tablet
 - 📱 Mobile
@@ -95,9 +100,10 @@ The app is fully responsive and provides an optimal viewing experience across a 
 The app is deployed on GitHub Pages. To deploy your own version:
 
 1. Update the homepage in `package.json`:
+
    ```json
    {
-     "homepage": "https://yourusername.github.io/react-recipe-app"
+     "homepage": "https://deepakpatil26.github.io/react-recipe-app"
    }
    ```
 
@@ -111,6 +117,7 @@ The app is deployed on GitHub Pages. To deploy your own version:
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to:
+
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
@@ -124,6 +131,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Deepak Patil**
+
 - GitHub: [@deepakpatil26](https://github.com/deepakpatil26)
 
 ## 🙏 Acknowledgments
