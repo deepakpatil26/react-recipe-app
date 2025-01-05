@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/react-recipe-app/static/css/main.da3dfcc0.css",
-    "main.js": "/react-recipe-app/static/js/main.d008f6dd.js",
-    "static/css/7.f8abc821.chunk.css": "/react-recipe-app/static/css/7.f8abc821.chunk.css",
-    "static/js/7.21d9c8ae.chunk.js": "/react-recipe-app/static/js/7.21d9c8ae.chunk.js",
+    "main.js": "/react-recipe-app/static/js/main.02e519e0.js",
+    "static/css/33.7b954d2c.chunk.css": "/react-recipe-app/static/css/33.7b954d2c.chunk.css",
+    "static/js/33.a467710e.chunk.js": "/react-recipe-app/static/js/33.a467710e.chunk.js",
     "static/js/12.6ecb6308.chunk.js": "/react-recipe-app/static/js/12.6ecb6308.chunk.js",
     "static/js/486.40ef6ad9.chunk.js": "/react-recipe-app/static/js/486.40ef6ad9.chunk.js",
     "static/js/591.e4c3a1a2.chunk.js": "/react-recipe-app/static/js/591.e4c3a1a2.chunk.js",
     "static/js/295.f2839ecb.chunk.js": "/react-recipe-app/static/js/295.f2839ecb.chunk.js",
     "index.html": "/react-recipe-app/index.html",
     "main.da3dfcc0.css.map": "/react-recipe-app/static/css/main.da3dfcc0.css.map",
-    "main.d008f6dd.js.map": "/react-recipe-app/static/js/main.d008f6dd.js.map",
-    "7.f8abc821.chunk.css.map": "/react-recipe-app/static/css/7.f8abc821.chunk.css.map",
-    "7.21d9c8ae.chunk.js.map": "/react-recipe-app/static/js/7.21d9c8ae.chunk.js.map",
+    "main.02e519e0.js.map": "/react-recipe-app/static/js/main.02e519e0.js.map",
+    "33.7b954d2c.chunk.css.map": "/react-recipe-app/static/css/33.7b954d2c.chunk.css.map",
+    "33.a467710e.chunk.js.map": "/react-recipe-app/static/js/33.a467710e.chunk.js.map",
     "12.6ecb6308.chunk.js.map": "/react-recipe-app/static/js/12.6ecb6308.chunk.js.map",
     "486.40ef6ad9.chunk.js.map": "/react-recipe-app/static/js/486.40ef6ad9.chunk.js.map",
     "591.e4c3a1a2.chunk.js.map": "/react-recipe-app/static/js/591.e4c3a1a2.chunk.js.map",
@@ -20,6 +20,6 @@
   },
   "entrypoints": [
     "static/css/main.da3dfcc0.css",
-    "static/js/main.d008f6dd.js"
+    "static/js/main.02e519e0.js"
   ]
 }
